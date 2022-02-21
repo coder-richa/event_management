@@ -3,9 +3,23 @@
  */
 // Defining jquery style query selector
 // selects single element
-const $first = (selector, elem = document) => elem.querySelector(selector);
-// selects all element
-const $all = (selector, elem = document) => elem.querySelectorAll(selector);
+/**
+ *
+ * This function returns first the child element of the parent element with the given selector
+ * @param {*} selector It contains a string presenting a tag, class or id of the element that needs to be selected
+ * @param {*} [parentElem=document] It contains the reference to the element where to search for the child elements
+ */
+const $first = (selector, parentElem = document) =>
+  parentElem.querySelector(selector);
+
+/**
+ *
+ * This function returns all the child elements of the parent element with the given selector
+ * @param {*} selector It contains a string presenting a tag, class or id of the element that needs to be selected
+ * @param {*} [parentElem=document] It contains the reference to the element where to search for the child elements
+ */
+const $all = (selector, parentElem = document) =>
+  parentElem.querySelectorAll(selector);
 
 /************************
  *  querySelector functions end

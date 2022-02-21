@@ -1,4 +1,8 @@
 // scrollToView scrolls the element's parent container such that the element on which
+/**
+ * scrollToView function accepts an element and brings the element into view
+ * @param {*} elem It holds the element reference
+ */
 // scrollIntoView() is called is visible to the user
 const scrollToView = ({ elem, block = "start", inline = "nearest" }) => {
   // block Optional
